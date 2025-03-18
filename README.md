@@ -1,20 +1,22 @@
-# Windows 11 Compatibility Checker
+ Windows 11 Compatibility Checker
 
 ## Overview
-This PowerShell script checks if your device meets the minimum requirements for Windows 11. It performs checks for:
-- TPM 2.0
-- Secure Boot
-- Processor Architecture
-- RAM (Minimum 4GB)
-- Disk Partition (GPT)
-- Windows Version
+This PowerShell script checks if your Windows 10 device meets the minimum system requirements for Windows 11.  
 
-If your device is **already running Windows 11**, it will notify you.  
-If your device is running **Windows 10**, it will generate a report `<hostname>.txt` with the results.
+### **The script checks for:**
+- TPM 2.0 availability
+- Secure Boot status
+- RAM size (Minimum 4GB required)
+- Processor architecture (Must be 64-bit)
+- Disk partition style (GPT required)
+- Windows version
+
+If your system **is already running Windows 11**, the script will notify you.  
+If your system **is running Windows 10**, it will generate a **report** named `<hostname>.txt` in the same directory as the script.
 
 ---
 
-## How to Run
+## How to Run the Script
 
 ### **1. Run Without Execution Policy Bypass**
 If your PowerShell execution policy allows scripts:
